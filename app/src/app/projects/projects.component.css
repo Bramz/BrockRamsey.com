@@ -1,0 +1,131 @@
+/* Portfolio Items */
+.portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between cards */
+}
+
+/* Project Card Styles */
+.project-card {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 700px; /* Maximum width for the card */
+    margin-bottom: 20px; /* Space between cards */
+    padding: 20px; /* Padding inside cards */
+    background-color: #ddd; /* Slightly darker than white background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Card shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+
+/* Override Angular Material styles for card titles and subtitles */
+.project-card .mat-card-subtitle-wrapper .mat-card-subtitle {
+    font-size: 18px !important; /* Title and subtitle font size */
+    color: #333 !important; /* Title and subtitle color */
+    margin-bottom: 10px !important; /* Space below subtitle */
+}
+
+.custom-title-container {
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #333;
+}
+
+.custom-title {
+    font-size: 1.5rem;
+    text-decoration: #000, underline;
+    margin-bottom: 10px;
+    color: #50C878;
+}
+
+
+/* Custom subtitle style */
+.custom-subtitle {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Darker and larger shadow on hover */
+}
+
+/* Card Header Styles */
+.mat-card-header {
+    padding-bottom: 10px; /* Space below header */
+    border-bottom: 1px solid #ddd; /* Bottom border */
+}
+
+.card-image {
+    width: 60px; /* Image width */
+    height: 60px; /* Image height */
+    border-radius: 50%; /* Rounded image */
+    overflow: hidden; /* Hide overflow */
+    margin-right: 16px; /* Space between image and text */
+}
+
+.card-image img {
+    width: 100%; /* Full width for image */
+    height: 100%; /* Full height for image */
+    object-fit: cover; /* Cover image */
+}
+
+.mat-card-content {
+    padding-top: 10px; /* Space above content */
+    color: #333; /* Content text color */
+}
+
+.mat-card-content ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove left padding */
+}
+
+.mat-card-content li {
+    margin-bottom: 8px; /* Space between list items */
+}
+
+/* Custom Card Actions Styles */
+.custom-card-actions {
+    padding-top: 10px; /* Space above actions */
+    border-top: 1px solid transparent; /* Transparent top border */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.custom-card-actions:hover {
+    border-color: #ddd; /* Light border color on hover */
+}
+
+/* Card Actions Styles */
+.mat-card-actions {
+    padding-top: 10px; /* Space above actions */
+    border-top: 1px solid transparent; /* Transparent top border */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.mat-card-actions:hover {
+    border-color: #ddd; /* Light border color on hover */
+}
+
+.project-links {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.project-links-label {
+    color: #555; /* Label color */
+    font-weight: bold; /* Bold label */
+    margin-right: 5px; /* Add space between label and links */
+}
+
+.mat-card-actions a {
+    color: #555; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+    margin-right: 5px; /* Add space between links */
+}
+
+.mat-card-actions a:hover {
+    color: #333; /* Darker link color on hover */
+}

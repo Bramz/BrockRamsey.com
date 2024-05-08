@@ -1,0 +1,360 @@
+/* Global styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e6e6e6; /* Light gray background color */
+    color: #333; /* Default text color */
+}
+
+/* Override Angular Material styles for mat-toolbar */
+.mat-toolbar {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Override Angular Material styles for form inuts and button text */
+.mat-form-field,
+.mat-input-element,
+.mat-button {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #50C878;
+    text-decoration: underline;
+}
+
+/* Custom styles for the top navbar */
+.mat-toolbar.custom-nav {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+.nav-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav button {
+    color: #fff;
+}
+
+/* Global styles or component-specific stylesheet */
+.nav-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.about-content {
+    margin-bottom: 25px;
+}
+
+/* Add these styles to your existing stylesheet */
+#abilities {
+    color: #ddd;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #333; /* Slightly darker than #ddd */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+#abilities h2 {
+    color: #ddd; /* Title text color */
+    margin-bottom: 20px; /* Add space below the title */
+}
+
+.skills-list li {
+    margin-bottom: 10px; /* Adjust spacing between skills */
+}
+
+.skills-list li strong {
+    font-weight: bold;
+    color:#50C878 /* Highlight color for skills */
+}
+
+
+.portfolio-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    width: calc(50% - 20px);
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Adjust card content styles for better readability */
+mat-card-title,
+mat-card-subtitle,
+mat-card-content {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+mat-card-content ul {
+    padding-left: 20px;
+}
+
+mat-card-actions {
+    margin-top: 10px;
+}
+
+/* Override primary color for link-like buttons in portfolio section */
+#portfolio mat-card-actions a.mat-button.mat-primary {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+.custom-link.mat-button.mat-primary {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+/* Add these styles to your existing stylesheet */
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contact-form form {
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-form mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Global styles or component-specific styles */
+.cursive-logo {
+    width: 32px;
+    height: auto;
+    margin-left: 10px;
+    font-size: 2.0rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.cursive-font {
+    font-family: 'Dancing Script', cursive;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.scaled-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: 50px;
+}
+
+.profile-heading {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    background-color: #ddd;
+    padding-bottom: 25px;
+    border-radius: 10px;
+}
+
+.profile-heading::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.profile-image-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    clear: both;
+    position: relative;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+
+.profile-image-large {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-title {
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    /* margin-right: 10px; */
+    clear: both;
+    font-size: 2.5rem;
+    float: left;
+    color: #000;
+    font-weight: bold;
+    /* background-color: #333; */
+    /* padding: 10px; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    position: relative; /* Position relative for proper z-index stacking */
+    z-index: 1; /* Keep the profile picture and title in front of the background */
+}
+
+.contact-me {
+    clear: both;
+    float: left;
+    padding-bottom: 20px;
+}
+
+.google-maps-container {
+    margin-left: 40px;
+    width: 325px; /* Adjust the width as needed */
+    height: 75px; /* Adjust the height as needed */
+    float: left; /* Float the map container to the right */
+}
+
+.google-maps-container iframe {
+    width: 300px; /* Adjust the width as needed */
+    height: 190px; /* Adjust the height as needed */
+    border-radius: 10px; /* Adjust the border-radius as needed */
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    animation-name: slideInFromRight; /* Name of the slide animation */
+    animation-duration: 1.5s; /* Duration of the animation */
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.profile-subtitle {
+    color: #333;
+    margin-bottom: 10px;
+    clear: both;
+    font-size: 1.0rem;
+    float: inline-start;
+    /* font-family: 'Dancing Script', cursive; */
+    /* background-color: #333; */
+    /* padding: 10px; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.section {
+    clear: both;
+}
+
+#avatar {
+    background-color: #f8f8f8; /* Light gray background color */
+    background-image: url('./assets/profile-background.png'); /* Background image */
+    background-size: cover; /* Cover the entire area with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 190px;
+}
+
+.custom-ee {
+    background-color: #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#tech-summary {
+    background-color: #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+

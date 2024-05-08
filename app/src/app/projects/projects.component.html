@@ -1,0 +1,62 @@
+<section id="portfolio" class="section">
+    <h2>Portfolio</h2>
+    <h3>Software Applications</h3>
+    <div class="portfolio-items">
+        <mat-card *ngFor="let project of projects" class="project-card">
+            <mat-card-header class="custom-title-container">
+                <div mat-card-avatar class="card-image">
+                    <img [src]="project.imagePath" class="scaled-image" alt="{{ project.name }}">
+                </div>
+                <mat-card-title class="custom-title">
+                    {{ project.name }}
+                </mat-card-title>
+                <mat-card-subtitle class="custom-subtitle">{{ project.description }}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <ul>
+                    <li *ngFor="let point of project.content">{{ point }}</li>
+                </ul>
+            </mat-card-content>
+            <!-- <mat-card-actions class="custom-card-actions">
+                <p class="project-links-label">Project Links</p>&colon;&nbsp;
+                <a *ngFor="let link of project.links; let i = index" [href]="link" [target]="'_blank'">{{ getShortName(link) }}&nbsp;&nbsp;</a>
+            </mat-card-actions> -->
+            <mat-card-actions class="mat-card-actions">
+                <div class="project-links">
+                  <span class="project-links-label">Links:</span>
+                  <ng-container *ngFor="let link of project.links; let last = last">
+                    <a mat-button [href]="link" target="_blank">{{ getShortName(link) }}</a>
+                    <span *ngIf="!last"></span>
+                  </ng-container>
+                </div>
+              </mat-card-actions>
+        </mat-card>
+    </div>
+
+    <h3>Websites</h3>
+    <div class="portfolio-items">
+        <mat-card *ngFor="let site of sites" class="project-card">
+            <mat-card-header class="custom-title-container">
+                <div mat-card-avatar class="card-image">
+                    <img [src]="site.imagePath" class="scaled-image" alt="{{ site.name }}">
+                </div>
+                <mat-card-title class="custom-title">{{ site.name }}</mat-card-title>
+                <mat-card-subtitle class="custom-subtitle">{{ site.description }}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <ul>
+                    <li *ngFor="let point of site.content">{{ point }}</li>
+                </ul>
+            </mat-card-content>
+            <mat-card-actions class="mat-card-actions">
+                <div class="project-links">
+                  <span class="project-links-label">Links:</span>
+                  <ng-container *ngFor="let link of site.links; let last = last">
+                    <a mat-button [href]="link" target="_blank">{{ getShortName(link) }}</a>
+                    <span *ngIf="!last"></span>
+                  </ng-container>
+                </div>
+              </mat-card-actions>
+        </mat-card>
+    </div>
+</section>
