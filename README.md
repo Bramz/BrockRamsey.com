@@ -5,7 +5,7 @@ A personal portfolio and space to share professional and personal experiences.
 ## Features
 
 - **Professional Information**: Present information about my professional background, including work history, skills, and achievements, tailored for employment opportunities.
-- - **Freelance Work System**: A custom system for handling freelance projects, including project descriptions, client testimonials, and contact system for potential client collaboration.
+- **Freelance Work System**: A custom system for handling freelance projects, including project descriptions, client testimonials, and contact system for potential client collaboration.
 - **User/Admin Management**: Manage user interactions and administrative tasks with a management dashboard.
 - **Dynamic Vlog and Blog**: Engage visitors with vlogs and well-curated blog posts, offering a deep dive into my thoughts, experiences, and industry insights.
 - **Media Gallery**: Explore a visually stunning collection of images and videos, showcasing highlights from my personal and professional ventures, outdoor exploration and adventures.
