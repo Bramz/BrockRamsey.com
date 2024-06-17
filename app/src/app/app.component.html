@@ -1,0 +1,170 @@
+<mat-toolbar color="primary" class="custom-nav">
+  <span class="cursive-logo">Brock Ramsey</span>
+  <span class="spacer"></span>
+  <a href="#contact" class="nav-link">Contact</a>
+  <a href="#about" class="nav-link">About Me</a>
+  <a href="#abilities" class="nav-link">Abilities</a>
+  <a href="#portfolio" class="nav-link">Portfolio</a>
+</mat-toolbar>
+
+<main>
+  <section id="avatar" class="section">
+    <div class="profile-image-container" [@slideInFromTop]="animateContact">
+      <img src="./assets/meandbooks.png" alt="Brock Ramsey" class="profile-image-large">
+    </div>
+    <span class="profile-title" [@slideInFromLeft]="animateContact">
+      Full Stack Engineer
+    </span>
+    <span class="contact-me" [@slideInFromLeft]="animateContact">
+      <p><strong>Email:</strong>&nbsp;brockramz&#064;gmail.com</p>
+      <p><strong>Phone:</strong>&nbsp;508-296-0124</p>
+      <p><strong>Location:</strong>&nbsp;Wareham, Massachusetts</p>
+      <p><strong>GitHub:</strong>&nbsp;<a href="https://github.com/bramz">bramz</a></p>
+      <p><strong>Resume:</strong>&nbsp;<a href="../assets/BrockResume.pdf" target="_blank">View Resume</a></p>
+
+    </span>
+    <!-- Google Maps iframe -->
+     <!-- Remove for now -->
+    <!-- <div class="google-maps-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95240.72555186039!2d-70.78145256875526!3d41.75777852177128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4c6a72cbeb669%3A0x99f42ba694a14823!2sWareham%2C%20MA!5e0!3m2!1sen!2sus!4v1714890990410!5m2!1sen!2sus" width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div> -->
+
+    <span class="profile-subtitle" [@slideInFromRight]="animateContact">
+      <app-quote></app-quote>
+    </span>
+  </section>
+<!-- 
+  <section id="tech-summary" class="section" [@slideInFromRight]="animateContact">
+    <h3>Technical Summary</h3>
+    <p>
+      Experienced engineer skilled at aligning operations and development for efficient code delivery. Capable of managing cloud solutions, setting up monitoring systems, and practicing DevOps effectively on Windows, Mac, and Linux. Proficient in software development, using versatile tools across various systems and web environments. Known for fostering collaboration between teams to drive innovation, meet project goals effectively, and deliver high-quality solutions.
+    </p>
+  </section> -->
+  <!-- <section id="hobbies" class="section">
+    <h2>Hobbies and Interests</h2>
+    <div class="hobbies-content">
+        <p>Outside of work, I enjoy spending time outdoors and exploring nature. Some of my hobbies include:</p>
+        <ul>
+            <li>Fishing: I find peace and relaxation by the water, casting lines and enjoying the serenity of nature.</li>
+            <li>Hiking: Exploring scenic trails and discovering new paths is one of my favorite ways to unwind.</li>
+            <li>Photography: Capturing moments in nature and preserving memories through photography is a passion of mine.</li>
+            <li>Traveling: I love exploring new places, experiencing different cultures, and embarking on adventures around the globe.</li>
+        </ul>
+        <p>These activities not only rejuvenate me but also inspire creativity and a sense of wonder.</p>
+    </div>
+  </section>
+   -->
+   <section id="education-experience" class="section custom-ee" [@slideInFromBottom]="animateContact">
+    <h2>Education and Experience</h2>
+    <p>
+      I firmly believe in the power of self-directed learning, known as autodidactism. It's a philosophy that has shaped my approach to continuous growth and skill acquisition throughout my career. By taking ownership of my learning journey, I embrace challenges as opportunities to expand my knowledge base and refine my expertise.
+    </p>
+    <p>
+      Autodidactism isn't just a mindset; it's a lifestyle that I integrate into my daily routine. I am constantly seeking new information, exploring emerging technologies, and experimenting with innovative solutions. This proactive approach not only keeps me updated in the ever-evolving tech landscape but also fuels my passion for discovery and problem-solving.
+    </p>
+    <div class="education">
+      <h3>Education</h3>
+      <ul>
+        <li>
+          <strong>Bourne High School</strong> - General HS education
+        </li>
+        <li>
+          <strong>Self-Taught Programmer</strong> - Since the age of 10, continuously learning and exploring new technologies
+        </li>
+      </ul>
+    </div>
+    <div class="experience">
+      <h3>Experience</h3>
+      <ul>
+        <li>
+          <strong>Full Stack Engineer</strong> - 15+ years of experience in software development, cloud solutions, and infrastructure management at SaQus, MLM Celtic, Barque Energy Group.
+        </li>
+        <li>
+          <strong>Apple Certified Mac Technician (ACMT) &  Technician</strong>
+        </li>
+        <li>
+          <strong>Contributions to HackThisSite & RootThisBox</strong> - Held a lead role, developing challenges and overhauling both projects.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about" class="section" [@slideInFromLeft]="animateContact">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <h3>Technical Summary</h3>
+      <p>
+        Experienced engineer skilled at aligning operations and development for efficient code delivery. Capable of managing cloud solutions, setting up monitoring systems, and practicing DevOps effectively on Windows, Mac, and Linux. Proficient in software development, using versatile tools across various systems and web environments. Known for fostering collaboration between teams to drive innovation, meet project goals effectively, and deliver high-quality solutions.
+      </p>
+      <h3>Professional Journey</h3>
+      <p>
+        As a seasoned Full Stack Engineer, I've navigated through a dynamic career path spanning over 25 years. My journey began with self-teaching at the age of 10, leading to formal education at Bourne High School and continuous learning ever since.
+      </p>
+      <h3>Expertise and Passion</h3>
+      <p>
+        My expertise lies in the dynamic realm of Full Stack Engineering, where I harness a rich tapestry of skills honed over 25 years. I excel in crafting comprehensive solutions that bridge the gap between software development and infrastructure, ensuring seamless integration and optimal performance. My passion for exploring cutting-edge technologies fuels my drive to innovate, collaborate, and deliver impactful solutions that drive business growth and enhance user experiences.
+      </p>
+      <h3>Project Highlights</h3>
+      <p>
+        Throughout my career, I've contributed to diverse projects, including Hunger Solutions of New York, Hack This Site, and Apexiem Title Search, among others. These experiences have shaped my abilities in software development, cloud solutions, and infrastructure management.
+      </p>
+      <h3>Future Goals</h3>
+      <p>
+        Looking ahead, I envision myself continuing to explore new technologies, collaborating with innovative teams, and contributing to impactful projects globally. I'm passionate about advancing technology while embracing outdoor adventures and learning from diverse experiences.
+      </p>
+    </div>
+
+  </section>
+
+  <section id="abilities" class="section" [@slideInFromBottom]="animateContact">
+    <h2>Abilities</h2>
+    <div class="abilities-content">
+        <h3 class="skills-title">Skills Inventory</h3>
+        <ul class="skills-list">
+            <li><strong>Programming languages:</strong> Python, GoLang, Javascript, Typescript, PHP, Perl, ASP/ASP.NET</li>
+            <li><strong>Cloud:</strong> Google Cloud Engine, Amazon Web Services, Azure</li>
+            <li><strong>Containerization & Virtualization:</strong> Docker/Docker Compose, Kubernetes, VMware, VirtualBox, Vagrant, Hyper-V, FreeBSD Jailing, Chroot Jailing</li>
+            <li><strong>Web Daemons:</strong> Nginx, Lighttpd, Apache</li>
+            <li><strong>Databases & Persistence:</strong> MySQL, PostgreSQL, SQLite, BoltDB, Click, Redis, MariaDB, MongoDb</li>
+            <li><strong>Frameworks:</strong> Django, Flask, Aiohttp, Bottle, Gin, Angular, React, NestJS, Laravel, CodeIgniter</li>
+            <li><strong>Automation and Configuration Management:</strong> Puppet, Ansible</li>
+            <li><strong>Version Control:</strong> Git, BitBucket, Subversion (SVN)</li>
+            <li><strong>Agile Methodologies:</strong> Scrum, Jira, Confluence, Kanban</li>
+            <li><strong>Continuous Integration/Continuous Deployment (CI/CD):</strong> Jenkins, Gitlab, Travis CI</li>
+            <li><strong>Operating Systems:</strong> Windows, Linux (Ubuntu, RedHat, Kali, Debian), BSD (Open, Free, Net), Mac OS X</li>
+        </ul>
+    </div>
+  </section>
+  
+  <app-projects></app-projects>
+
+  <!-- <section id="contact" class="section" [@slideInAnimation]="animateContact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong>&nbsp;brockramz&#64;gmail.com</p>
+      <p><strong>Phone:</strong>&nbsp;508-296-0124</p>
+    </div>
+    <div class="contact-form">
+      <form>
+        <mat-form-field>
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Enter your name">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Email address</mat-label>
+          <input matInput type="email" placeholder="Enter your email">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Message</mat-label>
+          <textarea matInput rows="4" placeholder="Enter your message"></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+-->
+</main>
+
+<footer class="footer">
+  <p>&copy; 2024 Brock Ramsey</p>
+</footer>
